@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.jeecookbook.elkf4dev</groupId>
+    <artifactId>elkf4dev</artifactId>
+    <version>0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <description>ELK Stack for Developer.</description>
+
+    <properties>
+        <fluentd.version>v0.12.38-debian</fluentd.version>
+    </properties>
+
+    <modules>
+      <module>elkf4dev-fluentd</module>
+      <module>elkf4dev-stack</module>
+    </modules>
+
+</project>

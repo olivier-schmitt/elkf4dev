@@ -1,7 +1,6 @@
 # elkf4dev
 
 [![Travis CI](https://travis-ci.org/olivier-schmitt/elkf4dev.svg?branch=master)](https://travis-ci.org/olivier-schmitt/elkf4dev)
-
 [![Docker Repository on Quay](https://quay.io/repository/olivier_schmitt/elkf4dev-fluentd/status "Docker Repository on Quay")](https://quay.io/repository/olivier_schmitt/elkf4dev-fluentd)
 
 This project offers a local ELK FluentD stack for developers.

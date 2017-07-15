@@ -1,7 +1,7 @@
 version: '2'
 services:
   fluentd:
-    image: quay.io/${project.groupId}/elkf4dev-fluentd:${project.version}
+    image: ${project.groupId}/elkf4dev-fluentd:${project.version}
     volumes:
       - ${PWD}/conf/fluentd.conf:/fluentd/etc/fluent.conf
     links:

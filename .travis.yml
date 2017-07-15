@@ -12,7 +12,7 @@ install: true # This runs the "true" command in the install phase; thus skipping
 
 after_success:
   - if [ "$TRAVIS_BRANCH" == "master" ]; then
-    docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD";
+    docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD" quay.io;
     docker push quay.io/com.jeecookbook.elkf4dev/elkf4dev-fluentd:latest;
     fi
 

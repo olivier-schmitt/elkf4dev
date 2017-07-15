@@ -12,9 +12,8 @@ script: mvn clean install
 
 after_success:
   - if [ "$TRAVIS_BRANCH" == "master" ]; then
-    docker tag com.jeecookbook.elkf4dev/elkf4dev-fluentd:latest quay.io/com.jeecookbook.elkf4dev/elkf4dev-fluentd:latest;
-    docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD" quay.io;
-    docker push quay.io/com.jeecookbook.elkf4dev/elkf4dev-fluentd:latest;
+     docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD" quay.io;
+     docker push quay.io/olivier_schmitt/elkf4dev-fluentd:latest;
     fi
 
 cache:

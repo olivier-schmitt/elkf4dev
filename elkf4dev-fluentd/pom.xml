@@ -42,9 +42,9 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <repository>${project.groupId}/${project.artifactId}</repository>
-                    <tag>${project.version}</tag>
+                    <repository>quay.io/olivier_schmitt/${project.artifactId}</repository>
                     <tag>latest</tag>
+                    <googleContainerRegistryEnabled>false</googleContainerRegistryEnabled>
                     <contextDirectory>${project.build.outputDirectory}</contextDirectory>
                 </configuration>
             </plugin>

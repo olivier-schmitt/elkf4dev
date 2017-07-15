@@ -10,7 +10,11 @@ services:
 
 install: true # This runs the "true" command in the install phase; thus skipping install
 
-script:
+after_success:
+  - if [ "$TRAVIS_BRANCH" == "master" ]; then
+    docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD";
+    docker push quay.io/com.jeecookbook.elkf4dev/elkf4dev-fluentd:latest;
+    fi
 
 cache:
   directories:

@@ -12,7 +12,7 @@
     <description>ELK Stack for Developer.</description>
 
     <properties>
-        <fluentd.version>v0.12.38-debian</fluentd.version>
+        <fluentd.version>latest</fluentd.version>
     </properties>
 
     <modules>

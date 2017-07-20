@@ -5,7 +5,7 @@
 
 This project offers a local ELK FluentD stack for developers.
 
-Docker Compose is used to build a simple stack:
+Docker Compose is used to build a simple logging stack:
 
 ```yaml
 version: '2'
@@ -39,3 +39,11 @@ services:
     depends_on:
       - elasticsearch
 ```
+
+Check the following folder to get the needed files: https://github.com/olivier-schmitt/elkf4dev/tree/master/elkf4dev-stack/src/main/resources
+
+Download conf folder and docker-compose.yml, then run command "docker-compose up" to launch the stack.
+
+Every container should run with the option --log-driver=fluentd in order to push logs to the stack.
+
+Check Docker documentation about logging with Fluentd : https://docs.docker.com/engine/admin/logging/fluentd/
